@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
+
+ /* body,div,ul,h1,h2,h3,p {margin: 0;} */
+
+main {
+    max-width: 80ch;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    background: #000000 url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg") no-repeat;
+    background-size: 80%;
+    background-position: top;
+    position: relative;
+}
+
+footer {
+    color : #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    text-align: center;
+    padding: 2em;
+    margin-top: 2rem 2rem;
+}
+
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color : #607292;
+}
+
+h1, h2, nav {
+    font-family: "Kanit", sans-serif;
+}
+
+p {
+    font-size: 14pt;
+    font-family: "Crimson Text", serif;
+}
+
+
+figure {
+    padding: 1em;
+    border: 3px solid #cdcdcd;
+    border-radius: 1.5em;
+    margin: 1em;
+    float: right;
+    text-align: center;
+}
+
+iframe {
+    width: 400px;
+    height: 225px;
+    overflow: auto;
+}
+
+/*********** Overall page layout ***********/
+
+
+h1, nav a{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav li a:hover{
+    color: #fff00f;
+    background-color:rgba(255,255,255, 0.4);
+}
+
+
+/************* Tweeks *****************/
+nav {
+    position: absolute;
+    right: 0;
+}
+
+nav a{
+    padding: 1em;
+}
+
+footer a{
+    color: inherit;
+}
+
+/****** Chess pieces *******/
+
+#history-sec h2::before {
+    content: "\2655  ";
+}
+
+#rules-sec h2::before {
+    content: "\265a  ";
+}
+
+#training-sec h2::before {
+    content: "\2656  ";
+}
+
+#mvm-sec h2::before {
+    content: "\265D  ";
+}

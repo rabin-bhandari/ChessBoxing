@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
 
+
+body,div,ul,h1,h2,h3,p {margin: 0;}
 /*********** Overall page layout ***********/
 
 body {
@@ -12,10 +14,16 @@ body {
 nav ul {
     list-style-type: none;
     padding: 0;
+    position: fixed;
 }
 
-nav li + li {
+nav ul li + li {
     margin-top: 1em;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
 }
 
 footer {
@@ -36,11 +44,13 @@ figure {
     padding: 1em;
     border: 5px solid #cdcdcd;
     border-radius: 1em;
+    margin: 0;
 }
 
 
 h1 {
     font-size: 4em;
+    margin: 0;
 }
 
 h1, nav a{
@@ -76,4 +86,9 @@ footer {
 
 footer a{
     color: inherit;
+}
+
+iframe {
+    width: 400px;
+    height: 225px;
 }
