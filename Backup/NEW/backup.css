@@ -4,10 +4,6 @@
 
 /**** GLOBAL ****/
 
-html {
-    scroll-padding-top: 258px;
-}
-
 body{
     font-size: 14pt;
     font-family: "Crimson Text", serif;
@@ -16,13 +12,13 @@ body{
 }
 
 .container{
-    max-width: 90ch;
+    width: 90ch;
     margin: auto;
     overflow: hidden;
 }
 
 main {
-    padding-top: 258px;
+    padding-top: 256px;
 }
 
 /**** BANNER ****/
@@ -38,7 +34,6 @@ header {
 
 header .container {
     background: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg") no-repeat;
-    background-position: top;
     background-size: 100%;
 }
 
@@ -85,7 +80,7 @@ figure {
     float: right;
 
     padding: 1em;
-    margin: 0 0 0 1em;
+    margin-right: 0;
 }
 
 figcaption{
@@ -219,68 +214,13 @@ footer a{
 }
 
 
-/**** MEDIA QUERY @600- px ***/
 @media screen and (max-width: 600px) {
 
     .container{
-        width: 95vw;
-    }
-
-    header {
-        max-height: 225px;
-    }
-
-    header .container {
-        max-height: 225px;
-    }
-
-    html {
-        scroll-padding-top: 225px;
-    }
-    
-    h1 {
-        font-size: 25pt;
-        margin-bottom: 0;
-    }
-
-    header a {
-        padding: 0;
-        padding-left: 1020px;
-    }
-
-    nav li{
-        float: none;
-        display: block;
-        margin: 0;
-        text-align: right;
-        white-space: nowrap;
-    
-    }
-    
-    nav {
-        margin-bottom: 10px;
-    }
-
-
-    img, iframe, figcaption {
-        max-width: 75vw;
-    }    
-
-    figcaption {
-        display: block;
-    }
-
-    #intro-sec figure {
-        margin-top: 1em;
+        margin: ;
     }
 
     figure {
         float: none;
-        position: relative;
-        margin: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        display: inline-block; 
     }
 }
-

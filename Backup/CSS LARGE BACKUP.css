@@ -14,15 +14,15 @@ body {
 }
 
 main {
-    max-width: 80ch;
+    max-width: 90ch;
     margin: 0 auto 0 auto;
-    padding-top: 300px;
+    padding-top: 200px;
     overflow: hidden;
 }
 
 header {
     width: 100%;
-    height: 300px;
+    height: 200px;
     display: block;
     background-color: #000000;
     position: fixed;
@@ -33,46 +33,37 @@ header {
     background: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg") no-repeat;
     background-size: 100%;
     background-position: top;
-    max-width: 80ch;
-    height: 300px;
+    max-width: 90ch;
+    height: 200px;
     display: block;
     margin: 0 auto;
     position: relative;
 }
 
 .banner h1 {
-    position: absolute;
-    margin-top: 10%;
+    float: left;
+    margin-bottom: 10px
 }
+
+
 
 .navigation {
     float: right;
-    height: 100%;
+    margin: 0;
 }
 
 .navigation a{
     height: 100%;
-    display: table;
-    padding: 0 2em;
+    padding: 1em;
     color:#ffffff;
+    text-align: right;
     text-decoration:none;
 }
 
-/* 
-.navigation a {
-    height: 100%;
-    text-decoration: none;
-    display: table;
-    float: left;
-    padding: 0 2em ;
+.navigation li {
+    display: inline-block;
+    margin-top: 0;
 }
-
-.navigation a li {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-} */
-
 
 .navigation li a:hover{
     color: #fff00f;
@@ -117,35 +108,6 @@ figcaption {
     padding: 1em;
     font-style: italic;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*********** Overall page layout ***********/
-
-
-/* h1, nav a{
-    color: #ffffff;
-    display: inline-block;
-    text-decoration: none;
-}
-
-
-nav li {
-    list-style: none;
-    display: inline-block;
-} */
-
-
 
 /************* Tweeks *****************/
 
@@ -215,4 +177,69 @@ iframe {
     height: 225px;
     margin: auto;
     overflow: hidden;
+}
+
+
+
+
+/* MEDIA QUERIRES */
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 0 20px;
+    }
+
+    .banner {
+        background: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg") no-repeat;
+        background-size: 100%;
+        background-position: top;
+        max-width: 90ch;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .banner h1 {
+        position: relative;
+        top: 20%;
+        left: 20px;
+        font-size: 2em;
+        display: inline;
+    }
+    
+    
+    
+    .navigation {
+        float: right;
+        display: inline-block;
+        text-align: right;
+    }
+    
+    .navigation a{
+        height: 100%;
+        color:#ffffff;
+        text-decoration:none;
+        padding: 0 20px 0 100vw;
+    }
+
+    .navigation a li{
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    figure {
+        float: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    figcaption {
+        max-width: 100%;
+    }
 }

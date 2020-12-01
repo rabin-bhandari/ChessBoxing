@@ -4,10 +4,6 @@
 
 /**** GLOBAL ****/
 
-html {
-    scroll-padding-top: 258px;
-}
-
 body{
     font-size: 14pt;
     font-family: "Crimson Text", serif;
@@ -16,7 +12,7 @@ body{
 }
 
 .container{
-    max-width: 90ch;
+    width: 90ch;
     margin: auto;
     overflow: hidden;
 }
@@ -232,10 +228,6 @@ footer a{
 
     header .container {
         max-height: 225px;
-    }
-
-    html {
-        scroll-padding-top: 225px;
     }
     
     h1 {

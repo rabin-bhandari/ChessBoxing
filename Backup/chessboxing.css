@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
+
+
+body,div,ul,h1,h2,h3,p {margin: 0;}
+/*********** Overall page layout ***********/
+
+body {
+    max-width: 80ch;
+    margin: 0 auto 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+}
+
+nav ul li + li {
+    margin-top: 1em;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+    margin-top: 4em;
+}
+
+/*********** Colours, fonts and images ***********/
+
+header {
+    background: #000000 url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+figure {
+    padding: 1em;
+    border: 5px solid #cdcdcd;
+    border-radius: 1em;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+h1, nav a{
+    color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    color : #607292;
+}
+
+h1, h2, nav {
+    font-family: "Kanit", sans-serif;
+}
+
+p {
+    font-size: 14pt;
+    font-family: "Crimson Text", serif;
+}
+footer {
+    color : #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+}
+
+footer a{
+    color: inherit;
+}
+
+iframe {
+    width: 400px;
+    height: 225px;
+}

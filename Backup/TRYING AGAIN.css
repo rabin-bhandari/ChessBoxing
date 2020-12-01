@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+section {
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 90ch;
+    margin: 0 20px;
+    padding-top: 200px;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-color: #000000;
+    position: fixed;
+    z-index: 1000;
+}
+
+.banner {
+    background: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg") no-repeat;
+    background-size: 100%;
+    background-position: top;
+    max-width: 90ch;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner h1 {
+    position: relative;
+    top: 20%;
+    left: 20px;
+    font-size: 2em;
+    display: inline;
+    color: #ffffff;
+}
+
+
+
+.navigation {
+    float: right;
+    display: inline-block;
+    text-align: right;
+}
+
+.navigation a{
+    height: 100%;
+    color:#ffffff;
+    text-decoration:none;
+    padding-left: 100vw;
+    padding-right: 20px;
+}
+
+.banner h2 {
+    font-size:  ;
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+/* 
+.navigation a {
+    height: 100%;
+    text-decoration: none;
+    display: table;
+    float: left;
+    padding: 0 2em ;
+}
+
+.navigation a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+} */
+
+
+.navigation li a:hover{
+    color: #fff00f;
+    background-color:rgba(255,255,255, 0.4);
+}
+
+
+
+#intro-sec img{
+    width: 400px;
+}
+
+figure {
+    padding: 1em;
+    border: 3px solid #cdcdcd;
+    border-radius: 1.5em;
+    margin: 1em;
+
+    float: right;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+tr:first-child {
+    border-top: 3px solid #cdcdcd;
+}
+tr:last-child{
+    border-bottom: 3px solid #cdcdcd;;
+}
+
+td {
+    border-top: 0.2px solid #cdcdcd;
+    padding: 0.5em;
+}
+
+figcaption {
+    width: 400px;
+    text-align: center;
+    padding: 1em;
+    font-style: italic;
+}
+
+/************* Tweeks *****************/
+
+
+/****** Chess pieces *******/
+
+#history-sec h2::before {
+    content: "\2655  ";
+}
+
+#rules-sec h2::before {
+    content: "\265a  ";
+}
+
+#training-sec h2::before {
+    content: "\2656  ";
+}
+
+#mvm-sec h2::before {
+    content: "\265D  ";
+}
+
+/******** Don't change *************/
+
+
+footer {
+    color : #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    text-align: center;
+    padding: 2em;
+    margin-top: 4em;
+}
+
+
+footer a{
+    color: inherit;
+}
+
+
+
+h2 {
+    font-size: 1rem;
+    color : #607292;
+}
+
+h1, h2, nav {
+    font-family: "Kanit", sans-serif;
+}
+
+p {
+    font-size: 14pt;
+    font-family: "Crimson Text", serif;
+}
+
+
+iframe {
+    width: 400px;
+    height: 225px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+
+/* MEDIA QUERIRES */
+
+@media screen and (min-width: 600px) {
+    body {
+        display: none;        
+    }
+
+    .banner h1 {
+        float: left;
+        margin-bottom: 10px;
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        width: auto;
+        float: right;
+        margin: 0;
+    }
+    
+    .navigation a{
+        height: 100%;
+        display: table;
+        padding: 1em;
+        color:#ffffff;
+        text-align: right;
+        text-decoration:none;
+    }
+    
+    .navigation li {
+        display: inline-block;
+        margin-top: 0;
+    }
+    
+}

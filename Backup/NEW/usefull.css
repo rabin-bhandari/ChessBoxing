@@ -1,0 +1,190 @@
+.navigation li a:hover{
+    color: #fff00f;
+    background-color:rgba(255,255,255, 0.4);
+}
+
+
+
+
+
+/************* Tweeks *****************/
+
+
+
+
+
+/* .banner {
+    background: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg")
+    background-size: 100%;
+} */
+
+/* figure {
+    padding: 1em;
+    border: 3px solid #cdcdcd;
+    border-radius: 1.5em;
+    margin: 1em;
+    float: right;
+} */
+
+
+/* table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+tr:first-child {
+    border-top: 3px solid #cdcdcd;
+}
+tr:last-child{
+    border-bottom: 3px solid #cdcdcd;;
+}
+
+td {
+    border-top: 0.2px solid #cdcdcd;
+    padding: 0.5em;
+} 
+
+iframe {
+    width: 400px;
+    height: 225px;
+    margin: auto;
+    overflow: hidden;
+}
+
+*/
+
+/**********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap');
+
+/**** OVERALL ****/
+
+body{
+    font-size: 14pt;
+    font-family: "Crimson Text", serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 90ch;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #000000;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 256px;
+    z-index: 100;
+}
+
+main {
+    padding-top: 256px;
+}
+
+header .container {
+    background: url("http://homepages.cs.ncl.ac.uk/harold.fellermann/csc8018/chessboxing/chessboxing_background.jpg") no-repeat;
+    background-size: 100%;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav li{
+    float: left;
+    display: inline;
+    margin: 0;
+    text-align: right;
+
+}
+
+nav {
+    float: right;
+    margin-bottom: 10px;
+}
+
+nav a:hover{
+    color: #fff00f;
+    background-color:rgba(255,255,255, 0.4);
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+figcaption{
+    text-align: center;
+}
+
+
+
+/**** BASIC ****/
+
+    /* Text */
+h1 {
+    font-size: 60pt;
+    margin: 50px 0 50px 0;
+}
+
+
+h2 {
+    font-size: 25pt;
+    color : #607292;
+}
+
+h1, h2, nav {
+    font-family: "Kanit", sans-serif;
+}
+
+    /* Chess pieces */
+
+h2::before {
+    font-size: 60pt;
+}
+
+#history-sec h2::before {
+    content: "\2655  ";
+}
+
+#rules-sec h2::before {
+    content: "\265a  ";
+}
+
+#training-sec h2::before {
+    content: "\2656  ";
+}
+
+#mvm-sec h2::before {
+    content: "\265D  ";
+}
+
+
+    /* footer */
+footer {
+    color : #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    text-align: center;
+    padding: 2em;
+    margin-top: 4em;
+}
+
+
+footer a{
+    color: inherit;
+}
